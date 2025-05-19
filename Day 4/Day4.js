@@ -9,3 +9,7 @@ for (let i = 4; i < 14; i++) {
 for (i = 9; i < 29; i++) {
     console.log("how're you today?");
 }
+
+for (i = 7; i < 9; i++) {
+    console.log("hi");
+}
