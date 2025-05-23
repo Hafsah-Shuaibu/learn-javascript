@@ -27,5 +27,17 @@ kitchen(item1, item2, item3);
 
 
 function changeText() {
-    document.getElementsByClassName("text").innerHTML("hi")
+   alert('welcome')
+}
+
+function myWork() {
+    let a = "Hello ";
+    let b = document.getElementById('name').value;
+    let c = ', welcome to our site!';
+    let message = a + b + c;
+    const output = document.getElementById('messageOutput');
+    output.style.display = 'block';
+    output.innerHTML = message;
+
+    
 }
