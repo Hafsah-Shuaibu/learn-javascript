@@ -21,3 +21,11 @@ const item2 = "pot";
 const item3 = "fridge";
 
 kitchen(item1, item2, item3);
+
+
+//// functions
+
+
+function changeText() {
+    document.getElementsByClassName("text").innerHTML("hi")
+}
