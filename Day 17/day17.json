@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Umaru Musa Yar'adua University",
+        "numberOfFaculties": 9,
+        "type": "stateUniversity",
+        "numberOfStudents": 10000000
+    },
+
+    {
+      "name": "Bayero University Kano",
+        "numberOfFaculties": 12,
+        "type": "stateUniversity",
+        "numberOfStudents": 24000000  
+    },
+
+    {
+        "name": "Kaduna State University",
+        "numberOfFaculties": 10,
+        "type": "stateUniversity",
+        "numberOfStudents": 17000000
+    },
+
+    {
+        "name": "University of Ibadan",
+        "numberOfFaculties": 15,
+        "type": "stateUniversity",
+        "numberOfStudents": 43000000
+    }
+]
