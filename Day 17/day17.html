@@ -24,4 +24,24 @@
     }
 
     friend2.statement()
+
+
+
+    let friend3 = {
+        firstName: "Fareeha",
+        lastName: "Sani Musa",
+        age: 23,
+        career: "geographer",
+        address: "Katsina",
+        financialSource: "employed",
+        fullname: function(){
+            return this.firstName + " " + this.lastName
+        },
+        fullAddress: function(){
+            return this.firstName + " lives in " + this.address + " state, Nigeria."
+        }
+    }
+
+    console.log(friend3.fullname());
+    console.log(friend3.fullAddress());
 </script>
