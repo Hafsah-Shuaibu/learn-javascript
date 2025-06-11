@@ -29,6 +29,14 @@
         <button type="submit">Submit</button>
     </form>
 
+    <!--EVENT DELEGATION-->
+
+    <ul id="nameList">
+        <li>Name 1</li>
+        <li>Name 2</li>
+        <li>Name 3</li>
+    </ul>
+
     <script>
         function Change() {
             const name = document.getElementById("nameSelect").value;
@@ -44,6 +52,15 @@
             const name = document.getElementById("name").value;
             alert("Your form was submitted with a name: " + name);
         }
+
+        // EVENT DELEGATION
+
+        document.getElementById("nameList").addEventListener("click", function(e) {
+          if (e.target.tagName === "LI") {
+          alert("You clicked: " + e.target.textContent);
+            }
+        });
+
     </script>
 
 </body>
