@@ -28,5 +28,23 @@
         <input type="text" id="name" placeholder="Enter your name">
         <button type="submit">Submit</button>
     </form>
+
+    <script>
+        function Change() {
+            const name = document.getElementById("nameSelect").value;
+            alert("Your name is: " + name);
+        }
+
+        function Click() {
+            alert("Button successfully clicked");
+        }
+
+        function Submit(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            alert("Your form was submitted with a name: " + name);
+        }
+    </script>
+
 </body>
 </html>
