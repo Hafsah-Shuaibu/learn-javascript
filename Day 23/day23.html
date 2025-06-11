@@ -37,6 +37,16 @@
         <li>Name 3</li>
     </ul>
 
+    <!--EVENT BUBBLING-->
+
+    <div id="outer">
+        Outer Div
+        <div id="inner">
+            Inner Div <BR></BR>
+            <button id="btn">Click Me</button>
+        </div>
+    </div>
+
     <script>
         function Change() {
             const name = document.getElementById("nameSelect").value;
@@ -60,6 +70,21 @@
           alert("You clicked: " + e.target.textContent);
             }
         });
+
+
+       // EVENT BUBBLER
+
+       document.getElementById("btn").addEventListener("click", function() {
+    alert("Button clicked!");
+  });
+
+  document.getElementById("inner").addEventListener("click", function() {
+    alert("Inner Div clicked!");
+  });
+
+  document.getElementById("outer").addEventListener("click", function() {
+    alert("Outer Div clicked!");
+  });
 
     </script>
 
