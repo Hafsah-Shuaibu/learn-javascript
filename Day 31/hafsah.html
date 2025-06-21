@@ -1,0 +1,13 @@
+<script>
+    //CALLBACK FUNCTIONS
+
+    function fetchData(callback) {
+        setTimeout(() => {
+            callback("Data Loaded");
+        }, 2000);
+    }
+
+    fetchData((result) => {
+        console.log(result);
+    })
+</script>
