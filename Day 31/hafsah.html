@@ -1,7 +1,7 @@
 <script>
     //CALLBACK FUNCTIONS
 
-    function fetchData(callback) {
+    /*function fetchData(callback) {
         setTimeout(() => {
             callback("Data Loaded");
         }, 2000);
@@ -9,5 +9,14 @@
 
     fetchData((result) => {
         console.log(result);
-    })
+    })*/
+
+    //PROMISES
+
+    function doTask(taskName, delay){
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve(`taskName completed after{delay}ms`);} ,delay);
+        });
+    }
 </script>
